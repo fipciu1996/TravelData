@@ -20,6 +20,7 @@ In the Database class, ensure that the database is created and entered into it a
 The GUI should allow you to select the language and regional settings in which offers are shown.
 Any database operations can only be performed in the Database class.
 Ensure that the following (only modifiable in green areas)
+
 public class Main {
   public static void main(String[] args) {
     String dirName = System.getProperty("user.home")+"/UTP6dir";
@@ -27,16 +28,17 @@ public class Main {
     Futil.processDir(dirName, resultFileName);
   }
 }
+
 worked properly and derived for the following sample data, 
 contained in data directory files: 
 pl	Japonia	2015-09-01	2015-10-01	jezioro	10000,20	PLN
-pl_PL	W³ochy	2015-07-10	2015-07-30	morze	4000,10	PLN
+pl_PL	WÅ‚ochy	2015-07-10	2015-07-30	morze	4000,10	PLN
 en_GB	United States	2015-07-10	2015-08-30	mountains	5,400.20	USD
 
 following results: 
 Japonia 2015-09-01 2015-10-01 jezioro 10 000,2 PLN
-W³ochy 2015-07-10 2015-07-30 morze 4 000,1 PLN
-Stany Zjednoczone Ameryki 2015-07-10 2015-08-30 góry 5 400,2 USD
+WÅ‚ochy 2015-07-10 2015-07-30 morze 4 000,1 PLN
+Stany Zjednoczone Ameryki 2015-07-10 2015-08-30 gÃ³ry 5 400,2 USD
 Japan 2015-09-01 2015-10-01 lake 10,000.2 PLN
 Italy 2015-07-10 2015-07-30 sea 4,000.1 PLN
 United States 2015-07-10 2015-08-30 mountains 5,400.2 USD
